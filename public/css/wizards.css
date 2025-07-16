@@ -1,0 +1,196 @@
+/* HOUSE DETAILS */
+#house-details {
+    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 1000px;
+    margin: 40px auto 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    font-family: Georgia, serif;
+}
+
+#house-name {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #800000;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+#founder-box {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+#founder-box .label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+#founder-box .value {
+    font-style: italic;
+    color: #555;
+}
+
+.house-description {
+    font-size: 1.2rem;
+    color: #222;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* WIZARD CARD CONTAINER */
+#wizard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* WIZARD INDIVIDUAL CARD */
+.wizard-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.wizard-card:hover {
+    transform: translateY(-5px);
+}
+
+.wizard-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.wizard-name {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* VIEW DETAILS BUTTON */
+.view-details {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    background-color: #a00000;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: #800000;
+}
+
+/* EDIT BUTTON (Styled like a button) */
+.edit-details {
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 5px;
+    padding: 8px 12px;
+    background-color: #0059b3;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.edit-details:hover {
+    background-color: #004080;
+}
+
+/* DELETE BUTTON */
+.wizard-card form button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color:#333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wizard-card form button:hover {
+    background-color: #000;
+}
+
+/* MODAL BOX OVERLAY */
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* MODAL CONTENT BOX */
+#modal-content2 {
+    background-color: #1c1c1c;
+    color: white;
+    margin: 50px auto;
+    padding: 25px 30px 20px 30px;
+    border: 3px solid gold;
+    border-radius: 16px;
+    width: 60%;
+    max-width: 600px;
+    min-width: 300px;
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family:Georgia,serif;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    animation: fadeout 0.5s ease;
+}
+
+/* CLOSE BUTTON (X) - top right corner */
+#close2 {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#close2:hover {
+    color: gold;
+}
+
+/* MODAL ANIMATION */
+@keyframes fadeout {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

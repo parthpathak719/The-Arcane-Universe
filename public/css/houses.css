@@ -1,0 +1,165 @@
+/* Navbar styling */
+nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* translucent black */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* Nav links */
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: #f0c040; /* golden hover color */
+    transform: scale(1.05);
+}
+
+#button2 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+}
+
+#modal-content {
+    position: relative; /* Make it a positioning context for the close button */
+    background: linear-gradient(to bottom right, #1e1e1e, #2c2c2c);
+    color: #f0e6d2;
+    margin: 12% auto;
+    padding: 30px 40px;
+    border: 2px solid #f0c040;
+    border-radius: 16px;
+    width: fit-content;
+    max-width: 500px;
+    box-shadow: 0 0 25px rgba(240, 192, 64, 0.3);
+    text-align: center;
+    font-family:Georgia,serif;
+    font-size: 1.5rem;
+    font-weight:bold;
+    animation: fadeout 0.5s ease;
+}
+
+#modal-content h1 {
+    margin-bottom: 12px;
+    font-size: 2rem;
+    color: #ffd700;
+}
+
+#modal-content p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Close button */
+#close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    color: #ccc;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 10;
+}
+
+#close:hover {
+    color: #ffd700;
+}
+
+/* Optional animation */
+@keyframes fadeout{
+    0%{
+        opacity:0;
+        transform:scale(0.7);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* Grid layout to cover entire viewport below navbar */
+#house-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    top: 0px; /* Match nav height */
+    left: 0px;
+}
+
+
+/* House image styles - perfectly cover grid cells */
+#house-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:block;
+    border-radius: 0;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect (optional) */
+#house-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* Unmute button fixed top-right with consistent spacing */
+#button2 {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: #282c34;
+    color: white;
+    padding: 8px 14px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+
+#button2:hover {
+    background-color: #444;
+}
+

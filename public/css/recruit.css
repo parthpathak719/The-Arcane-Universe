@@ -1,0 +1,170 @@
+/* Modal Container */
+.modal3 {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7); /* Dim background */
+    backdrop-filter: blur(4px);
+}
+
+/* Modal Content */
+#modal-content3 {
+    background-color: rgba(30, 30, 30, 0.95);
+    margin: 10% auto;
+    padding: 2rem;
+    border: 2px solid #888;
+    width: 40%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-weight:bold;
+    animation: fadeInScale 0.5s ease;
+}
+
+/* Close Button */
+#close3 {
+    color: #fff;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: -1rem;
+    margin-right: -1rem;
+    position: relative;
+    top: -10px;
+    right: -10px;
+}
+
+#close3:hover {
+    color: #ff6b6b;
+}
+
+/* Heading and paragraph in modal */
+#modal-content3 h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, serif;
+}
+
+#modal-content3 p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Animation for opening effect */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* recruit.css */
+form#create {
+    width: 40%;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    font-family:Georgia,serif;
+}
+
+form#create h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="url"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #888;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+/* Consistent placeholder styling */
+input::placeholder,
+textarea::placeholder {
+    color: #333;
+    font-size: 1rem;
+}
+
+#recruit,#clear {
+    background-color: #444;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family:Georgia,serif;
+    transition: background-color 0.3s ease;
+}
+
+#recruit:hover,
+#clear:hover {
+    background-color: #222;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+button#unmute-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family:Georgia,serif;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+button#unmute-btn:hover {
+    background-color: #222;
+}
