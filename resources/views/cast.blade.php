@@ -1,4 +1,7 @@
 <x-layout>
+    <x-slot name="head">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon6.ico') }}">
+    </x-slot>
     <script>
             window.onload=function() {
                 document.getElementById('id05').style.display='block';

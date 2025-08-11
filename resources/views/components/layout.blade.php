@@ -8,12 +8,15 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/recruit.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/cast.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/quiz.css') }}">
+
+    {{ $head ?? '' }}
 </head>
 <body>
     <nav style="font-family:Georgia,serif;">
         <a href="{{ route('welcome') }}">Welcome</a>
         <a href="{{ route('platform')}}">Platform 9¾</a>
         <a href="{{ route('kingcross')}}">King Cross</a>
+        <a href="{{ route('castle')}}">Castle</a>
         <a href="{{ route('houses') }}">Houses</a>
         <a href="{{ route('recruit') }}">Recruit</a>
         <a href="{{ route('cast') }}">Cast</a>

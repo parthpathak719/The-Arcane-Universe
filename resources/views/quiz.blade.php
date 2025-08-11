@@ -1,4 +1,7 @@
 <x-layout>
+    <x-slot name="head">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon7.ico') }}">
+    </x-slot>
     <body style="background: url('https://images-cdn.ubuy.co.in/634269fb462eba2a6d01d3b6-harry-potter-movie-collage-1000-piece.jpg') no-repeat center top fixed; background-size: contain; background-attachment: fixed; margin: 0; padding: 0; box-sizing: border-box; background-color: #000; font-family:Georgia,serif;">
         <script>
             window.onload=function() {

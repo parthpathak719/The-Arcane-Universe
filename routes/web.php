@@ -9,6 +9,8 @@ Route::get('/platform',[WizardController::class,'platform'])->name('platform');
 
 Route::get('/kingcross',[WizardController::class,'kingcross'])->name('kingcross');
 
+Route::get('/castle',[WizardController::class,'castle'])->name('castle');
+
 Route::get('/houses',[WizardController::class,'houses'])->name('houses');
 
 Route::get('/wizards/{id}',[WizardController::class,'wizards'])->name('wizards');
