@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon4.ico') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon4.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}">
 </head>
 <body style="background: url('{{ $details->background_image }}') no-repeat center top fixed; background-size: contain; margin: 0; padding: 0; background-color: #000;">

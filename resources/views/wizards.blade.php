@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot name="head">
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon3.ico') }}">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon3.ico') }}">
     </x-slot>
     <br><br>
     @if (session('success'))

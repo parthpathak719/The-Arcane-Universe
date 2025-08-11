@@ -228,7 +228,6 @@
     }
 }
 
-
 /* Running effect */
 .run-to-wall {
     animation: zoomRun 2.2s ease-in forwards;

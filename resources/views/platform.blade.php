@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platform 9¾</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon2.ico') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon2.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/platform.css') }}">
 </head>
 <body>
