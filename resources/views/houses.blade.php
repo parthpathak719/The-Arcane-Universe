@@ -1,4 +1,5 @@
 <x-layout>
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon3.ico') }}">
     <script>
         window.onload = function () {
             document.getElementById('id01').style.display = "block";

@@ -14,15 +14,14 @@ wallVideo.style.display = 'none';
 // Unmute button
 button1.addEventListener('click', () => {
     bgVideo.muted = false;
-    wallVideo.play().catch(err => console.warn("Wall video can't play yet:", err));
     button1.style.display = 'none';
 });
 
 // Click ticket
 ticket.addEventListener('click', function() {
     wallVideo.style.display = 'flex';
-    gothrough.style.display = 'block';
     wallVideo.muted = false;
+    wallVideo.currentTime = 0;
     wallVideo.play().catch(err => console.warn("Autoplay with sound blocked:", err));
 
     ticket.style.display = 'none';
@@ -32,12 +31,19 @@ ticket.addEventListener('click', function() {
     button1.style.display = 'none';
 });
 
-// Click wall video to run animation
-wallVideo.addEventListener('click', function() {
-    sound.play();
-    wallVideo.classList.add('run-to-wall');
-    gothrough.style.display = 'none';
-    wallVideo.muted = true;
+wallVideo.addEventListener('timeupdate', function() {
+    if (wallVideo.currentTime >= wallVideo.duration) {
+        wallVideo.pause();
+        gothrough.style.display = 'block';
+
+        // Click wall video to run animation
+        wallVideo.addEventListener('click', function() {
+            sound.play();
+            wallVideo.classList.add('run-to-wall');
+            gothrough.style.display = 'none';
+            wallVideo.muted = true;
+        });
+    }
 });
 
 // When run animation ends → blackout & redirect

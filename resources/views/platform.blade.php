@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platform 9¾</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon2.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/platform.css') }}">
 </head>
 <body>
@@ -28,7 +29,7 @@
 
         <img id="ticket" src="https://res.cloudinary.com/dd4ldehqo/image/upload/v1754752509/ticket2_1_myw42l.jpg" alt="Train Ticket">
 
-        <video id="wall-video" autoplay loop muted>
+        <video id="wall-video" muted>
             <source src="{{ asset('videos/wall.mp4') }}" type="video/mp4">
         </video>
 
