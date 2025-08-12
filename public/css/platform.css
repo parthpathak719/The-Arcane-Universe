@@ -78,7 +78,6 @@
     transform: scale(1.2);
 }
 
-
 /* Fullscreen background video */
 #bg-video {
     position: fixed;
@@ -104,23 +103,6 @@
     cursor: pointer;
     background-color: black;
 }
-
-/* Unmute button */
-#button1 {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #444;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    font-family: Georgia,serif;
-    cursor: pointer;
-    z-index: 1000;
-}
-#button1:hover { background-color: #222; }
 
 .scene {
     position: relative;

@@ -11,7 +11,7 @@
         <div id="modal-content5">
             <span id="close5" onclick="document.getElementById('id05').style.display='none';">&times;</span>
                 <h1>Welcome To Cast!!</h1>
-                <p>"Unmute" And Enjoy The Video!!</p>
+                <p>Press "Unmute" And Enjoy The Video!!</p>
         </div>
     </div>
 
