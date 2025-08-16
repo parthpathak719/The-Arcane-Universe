@@ -1,5 +1,6 @@
 <x-layout>
     <x-slot name="head">
+        <title>Wizards</title>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon3.ico') }}">
     </x-slot>
     <br><br>

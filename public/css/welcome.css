@@ -36,11 +36,11 @@ body {
     display: block;
     border-radius: 8px;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
-    animation: float 3s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {
-    0%, 100% { transform: scale(0.7); }
+    0%, 100% { transform: scale(0.5); }
     50% { transform: scale(1.1); }
 }
 

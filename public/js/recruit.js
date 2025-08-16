@@ -9,6 +9,7 @@ window.addEventListener('load', () => {
     }
 });
 
+
 document.getElementById('name').addEventListener('input',function(){
     let name=this.value;
     let error=document.getElementById('name-error');

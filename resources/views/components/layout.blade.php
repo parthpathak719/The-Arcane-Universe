@@ -2,7 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wizarding Archives</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/houses.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/wizards.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/recruit.css') }}">

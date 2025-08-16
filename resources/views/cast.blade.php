@@ -1,5 +1,6 @@
 <x-layout>
     <x-slot name="head">
+        <title>Cast</title>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon6.ico') }}">
     </x-slot>
     <script>

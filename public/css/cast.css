@@ -11,65 +11,167 @@
     backdrop-filter: blur(6px);
 }
 
-/* Magical Dark Modal */
+/* ===== Magical Dark Modal (polished) ===== */
 #modal-content5 {
     position: relative;
-    background: rgba(20, 20, 20, 0.92);
-    color: #f0e6d2;
     margin: auto;
-    padding: 35px 50px;
-    width: 40%;
-    max-width: 600px;
-    border-radius: 16px;
-    border: 2px solid rgba(200, 170, 50, 0.7);
-    box-shadow: 0 0 35px rgba(200, 170, 50, 0.6);
-    font-family: 'Georgia', serif;
-    font-weight: bold;
+    padding: clamp(28px, 3vw, 40px) clamp(28px, 4vw, 56px);
+    width: min(90vw, 720px);
+
+    /* glassy panel that blends with bg video */
+    background: radial-gradient(120% 140% at 50% 0%,
+                 rgba(28, 28, 28, 0.70) 0%,
+                 rgba(18, 18, 18, 0.68) 45%,
+                 rgba(10, 10, 10, 0.64) 100%);
+    color: #f0e6d2;
+    border-radius: 18px;
+
+    /* subtle gold border + inner/outer glow */
+    border: 1px solid rgba(245, 210, 120, 0.35);
+    box-shadow:
+        0 0 0 1px rgba(245, 210, 120, 0.15) inset,
+        0 12px 40px rgba(0, 0, 0, 0.65),
+        0 0 50px rgba(245, 210, 120, 0.22);
+
+    /* blend with backdrop */
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+
+    font-family: Georgia, serif;
+    font-weight: 700;
     text-align: center;
-    animation: modalPop 0.6s ease forwards;
+
+    animation: modalPop 560ms ease forwards;
 }
 
-/* Opening Animation */
+/* soft rotating gold aura */
+#modal-content5::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: conic-gradient(
+        from 0deg,
+        rgba(255,220,140,.0),
+        rgba(255,220,140,.45),
+        rgba(255,220,140,.0) 25%,
+        rgba(255,220,140,.35),
+        rgba(255,220,140,.0) 50%,
+        rgba(255,220,140,.45),
+        rgba(255,220,140,.0)
+    );
+    filter: blur(12px);
+    opacity: .55;
+    z-index: -1;
+    animation: spinSlow 22s linear infinite;
+}
+
+/* tiny shimmer dust */
+#modal-content5::after {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border-radius: inherit;
+    pointer-events: none;
+    background-image:
+        radial-gradient(2px 2px at 20% 30%, rgba(255,240,180,.45) 40%, transparent 42%),
+        radial-gradient(1.5px 1.5px at 60% 70%, rgba(255,240,180,.35) 40%, transparent 42%),
+        radial-gradient(1.8px 1.8px at 80% 40%, rgba(255,240,180,.28) 40%, transparent 42%),
+        radial-gradient(1.2px 1.2px at 35% 85%, rgba(255,240,180,.28) 40%, transparent 42%);
+    background-repeat: no-repeat;
+    animation: shimmerFloat 8s ease-in-out infinite;
+    opacity: .6;
+}
+
+/* Opening Animation (kept, slightly refined) */
 @keyframes modalPop {
-    0% {
-        opacity: 0;
-        transform: scale(0.7);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+    0%   { opacity: 0; transform: translateY(8px) scale(.96); }
+    60%  { opacity: 1; transform: translateY(0)    scale(1.02); }
+    100% { opacity: 1; transform: translateY(0)    scale(1); }
+}
+@keyframes spinSlow { to { transform: rotate(360deg); } }
+@keyframes shimmerFloat {
+    0%   { transform: translateY(0)   }
+    50%  { transform: translateY(-6px) }
+    100% { transform: translateY(0)   }
 }
 
-/* Heading Glow */
+/* Heading Glow (warmer + crisper) */
 #modal-content5 h1 {
-    font-size: 2.4rem;
+    font-size: clamp(1.8rem, 2.4vw + 0.8rem, 2.6rem);
     margin-bottom: 12px;
-    text-shadow: 0 0 5px rgba(255, 240, 200, 0.8),
-                 0 0 10px rgba(255, 200, 100, 0.5);
+    letter-spacing: .5px;
+    text-shadow:
+        0 1px 0 rgba(0,0,0,.35),
+        0 0 6px rgba(255, 240, 200, 0.85),
+        0 0 16px rgba(255, 210, 120, 0.45);
 }
 
 /* Paragraph Style */
 #modal-content5 p {
-    font-size: 1.2rem;
-    color: #d9c89e;
+    font-size: clamp(1.05rem, 1.2vw + .6rem, 1.25rem);
+    color: #e7d9b2;
+    opacity: .95;
+    letter-spacing: .3px;
 }
 
-/* Close Button */
+/* Close Button (sleek, hoverable, accessible) */
 #close5 {
     position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 26px;
-    font-weight: bold;
-    color: #f0e6d2;
+    right: 16px;
+    top: 12px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 800;
+    color: #f6eaca;
+    background: radial-gradient(120% 120% at 50% 35%,
+               rgba(250, 230, 150, .22) 0%,
+               rgba(80, 60, 10, .12) 55%,
+               rgba(0,0,0,.0) 100%);
+    border: 1px solid rgba(245, 210, 120, 0.28);
+    box-shadow:
+        0 0 0 1px rgba(245,210,120,.12) inset,
+        0 2px 10px rgba(0,0,0,.4);
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+#close5:hover,
+#close5:focus {
+    outline: none;
+    transform: scale(1.06);
+    box-shadow:
+        0 0 0 1px rgba(255, 230, 150, .45) inset,
+        0 0 18px rgba(255, 220, 140, .35);
 }
 
-#close5:hover {
-    color: #ffe184;
+/* (Optional) dim/blur overlay behind modal if you have one */
+#modal-overlay5 {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
+
+/* Mobile tweaks */
+@media (max-width: 520px) {
+    #modal-content5 {
+        padding: 22px 22px 26px;
+        border-radius: 14px;
+    }
+    #close5 { right: 10px; top: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    #modal-content5,
+    #modal-content5::before,
+    #modal-content5::after {
+        animation: none !important;
+    }
+}
+
 
 /* Fullscreen background video */
 #bg-video {

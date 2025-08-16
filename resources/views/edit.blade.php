@@ -1,5 +1,6 @@
 <x-layout>
     <x-slot name="head">
+        <title>Modify</title>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon4.ico') }}">
     </x-slot>
     <br><br>

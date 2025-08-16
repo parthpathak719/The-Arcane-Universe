@@ -1,6 +1,7 @@
 <x-layout>
     <x-slot name="head">
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon3.ico') }}">
+        <title>Houses</title>
     </x-slot>
     <script>
         window.onload = function () {
