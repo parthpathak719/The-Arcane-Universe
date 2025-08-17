@@ -1,0 +1,88 @@
+/* Fullscreen background video */
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;   /* changed to cover so it looks cinematic */
+    z-index: -1;
+    background-color: black;
+}
+
+.board {
+    display: none;
+    position: absolute;
+    bottom: 330px; /* closer to center */
+    cursor: pointer;
+    height:200px;
+    left: 63%;
+    transform: translateX(-50%);
+    font-family: 'Cinzel', Georgia, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 1px;
+
+    /* Gold gradient that fits the brick lighting */
+    background: linear-gradient(180deg, #ffe9a3 0%, #d8a94f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Soft magical glow */
+    text-shadow: 
+        0 0 4px rgba(255, 224, 150, 0.6),
+        0 0 8px rgba(255, 210, 100, 0.5),
+        0 0 14px rgba(200, 130, 40, 0.3);
+
+    animation: glowPulse 1.8s ease-in-out infinite;
+    z-index: 200;
+}
+
+@keyframes glowPulse {
+    0%, 100% { 
+        text-shadow: 0 0 4px rgba(255, 224, 150, 0.6),
+                     0 0 8px rgba(255, 210, 100, 0.5),
+                     0 0 14px rgba(200, 130, 40, 0.3);
+    }
+    50% { 
+        text-shadow: 0 0 6px rgba(255, 235, 170, 0.8),
+                     0 0 12px rgba(255, 215, 120, 0.6),
+                     0 0 20px rgba(210, 140, 60, 0.4);
+    }
+}
+
+.board p {
+    margin: 0 0 14px;
+}
+
+.arrow-down {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 22px solid #e9c168; /* softer gold */
+    animation: bounce 1s infinite;
+    filter: drop-shadow(0 0 4px rgba(255, 224, 150, 0.7));
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Fullscreen background video */
+#train {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;   /* changed to cover so it looks cinematic */
+    z-index: -1;
+    background-color: black;
+}
