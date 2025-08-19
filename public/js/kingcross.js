@@ -13,6 +13,7 @@ window.addEventListener('load', () => {
         station.pause();
     }, 2000);
     close7.addEventListener('click', () => {
+        modal.style.display = 'none';
         station.play();
         station.muted = false;
     })

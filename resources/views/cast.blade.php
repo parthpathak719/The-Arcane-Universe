@@ -3,22 +3,18 @@
         <title>Cast</title>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon6.ico') }}">
     </x-slot>
-    <script>
-            window.onload=function() {
-                document.getElementById('id05').style.display='block';
-            }
-    </script>
+
     <div class="modal5" id="id05">
         <div id="modal-content5">
-            <span id="close5" onclick="document.getElementById('id05').style.display='none';">&times;</span>
+            <span id="close5">&times;</span>
                 <h1>Welcome To Cast!!</h1>
-                <p>Press "Unmute" And Enjoy The Video!!</p>
+                <p>Meet the magical cast of Harry Potter from the movies!!</p>
         </div>
     </div>
 
-    <video id="bg-video" autoplay loop muted>
+    <video id="bg-video" loop muted>
         <source src="{{ asset('videos/wizard.mp4') }}" type="video/mp4">
     </video>
 
-    <button id="button1" onclick="document.getElementById('bg-video').muted = false; this.style.display='none';">🔊 Unmute</button>
+    <script src="{{ asset('js/cast.js') }}"></script>
 </x-layout>

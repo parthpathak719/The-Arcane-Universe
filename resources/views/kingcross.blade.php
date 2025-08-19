@@ -9,7 +9,7 @@
 <body>
     <div class="modal7" id="id07">
         <div id="modal-content7">
-            <span id="close7" onclick="document.getElementById('id07').style.display='none';">&times;</span>
+            <span id="close7">&times;</span>
             <h1>Welcome To King Cross Station!!</h1>
             <p>Board The Hogwarts Train!!</p>
         </div>

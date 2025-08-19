@@ -1,4 +1,6 @@
 const bgVideo = document.getElementById('bg-video');
+const modal = document.getElementById('id06');
+const close = document.getElementById('close6');
 const wallVideo = document.getElementById('wall-video');
 const sound=new Audio('/audio/zoom.mp4');
 const ticket = document.getElementById('ticket');
@@ -8,10 +10,15 @@ const blackout = document.getElementById('blackout');
 wallVideo.style.display = 'none';
 
 window.addEventListener('load', () => {
-    if (localStorage.getItem('audioAllowed') === 'true') {
+    modal.style.display = 'block';
+    bgVideo.play();
+    bgVideo.muted = false;
+    close.addEventListener('click', () => {
+        modal.style.display = 'none';
         bgVideo.play();
         bgVideo.muted = false;
-    }
+    });
+    
 });
 
 // Click ticket
@@ -32,8 +39,8 @@ wallVideo.addEventListener('timeupdate', function() {
         wallVideo.pause();
         gothrough.style.display = 'block';
 
-        // Click wall video to run animation
-        wallVideo.addEventListener('click', function() {
+        // Click gothrough to run animation
+        gothrough.addEventListener('click', function() {
             sound.play();
             wallVideo.classList.add('run-to-wall');
             gothrough.style.display = 'none';

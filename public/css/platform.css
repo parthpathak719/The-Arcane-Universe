@@ -100,7 +100,6 @@
     width: 100vw;
     object-fit: contain;
     z-index: 50;
-    cursor: pointer;
     background-color: black;
 }
 
@@ -158,7 +157,9 @@
 .go-through {
     display: none;
     position: absolute;
-    bottom: 380px; /* closer to center */
+    cursor: pointer;
+    bottom: 180px; /* closer to center */
+    height: 300px;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Cinzel', Georgia, serif;

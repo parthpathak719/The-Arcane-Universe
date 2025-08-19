@@ -7,14 +7,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/platform.css') }}">
 </head>
 <body>
-    <script>
-        window.onload=function () {
-            document.getElementById('id06').style.display = 'block';
-        }
-    </script>
     <div class="modal6" id="id06">
             <div id="modal-content6">
-                <span id="close6" onclick="document.getElementById('id06').style.display='none';">&times;</span>
+                <span id="close6">&times;</span>
                 <h1>Welcome To Platform 9¾!!</h1>
                 <p>Get Your Ticket For King Cross Station!!</p>
             </div>

@@ -33,7 +33,6 @@ envelope.addEventListener('click', () => {
         letterContainer.style.display = 'flex';
         letterContainer.classList.add('show');
         music.play();
-        localStorage.setItem('audioAllowed','true');
         typeMessage(message);
     }, 1000); // match duration with animation
 });
