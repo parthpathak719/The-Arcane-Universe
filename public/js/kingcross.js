@@ -1,3 +1,5 @@
+const modal = document.getElementById('id07');
+const close = document.getElementById('close7');
 const station = document.getElementById('bg-video');
 const sound = new Audio('/audio/zoom.mp4');
 const board = document.querySelector('.board');
@@ -6,11 +8,16 @@ const train = document.getElementById('train');
 window.addEventListener('load', () => {
     sound.play();
     station.play();
+    setTimeout(() => {
+        modal.style.display = 'block'; // show modal once
+        station.pause();
+    }, 2000);
+    close7.addEventListener('click', () => {
+        station.play();
+        station.muted = false;
+    })
     station.addEventListener('timeupdate', () => {
-        if(station.currentTime >= 2){
-            station.muted = false;
-        }
-        if(station.currentTime >= station.duration){
+        if(station.currentTime >= 6.2){
             board.style.display = 'block';
         }
     });

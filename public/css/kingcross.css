@@ -1,3 +1,89 @@
+.modal7 {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+}
+
+/* Magical Modal Box */
+#modal-content7 {
+    position: relative;
+    background: radial-gradient(circle at top,
+        rgba(30, 20, 50, 0.96),   /* deep mystical violet */
+        rgba(10, 5, 20, 0.95));   /* dark midnight purple */
+    color: #f3e5ab;  /* parchment-like golden beige */
+    margin: auto;
+    padding: 35px 50px;
+    width: 45%;
+    max-width: 600px;
+    border-radius: 18px;
+    border: 2px solid rgba(255, 180, 90, 0.9); /* warm gold border */
+    box-shadow:
+        0 0 25px rgba(255, 180, 90, 0.4),
+        0 0 55px rgba(180, 90, 255, 0.25),  /* faint violet glow */
+        inset 0 0 20px rgba(255, 200, 120, 0.08);
+    font-family: 'Cinzel', 'Georgia', serif;
+    font-weight: bold;
+    text-align: center;
+    animation: modalPop 0.5s ease forwards;
+}
+
+/* Opening Animation stays the same */
+@keyframes modalPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Heading Glow */
+#modal-content7 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 14px;
+    color: #ffeecf; /* pale golden white */
+    text-shadow:
+        0 0 6px rgba(255, 240, 200, 0.9),
+        0 0 15px rgba(255, 200, 120, 0.6),
+        0 0 25px rgba(200, 120, 80, 0.4),
+        0 0 45px rgba(150, 90, 255, 0.3); /* soft magical purple */
+}
+
+/* Paragraph Style */
+#modal-content7 p {
+    font-size: 1.3rem;
+    color: #f7dba7; /* warm golden parchment */
+    text-shadow:
+        0 0 5px rgba(255, 220, 150, 0.3),
+        0 0 10px rgba(180, 120, 80, 0.2);
+}
+
+/* Close Button */
+#close7 {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff2cc; /* pale white-gold */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#close7:hover {
+    color: #ffb84d; /* amber gold */
+}
+
+
 /* Fullscreen background video */
 #bg-video {
     position: fixed;
@@ -21,40 +107,22 @@
     transform: translateX(-50%);
     font-family: 'Cinzel', Georgia, serif;
     font-weight: bold;
-    font-size: 1.5em;
     text-align: center;
     letter-spacing: 1px;
-
-    /* Gold gradient that fits the brick lighting */
-    background: linear-gradient(180deg, #ffe9a3 0%, #d8a94f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    /* Soft magical glow */
-    text-shadow: 
-        0 0 4px rgba(255, 224, 150, 0.6),
-        0 0 8px rgba(255, 210, 100, 0.5),
-        0 0 14px rgba(200, 130, 40, 0.3);
-
-    animation: glowPulse 1.8s ease-in-out infinite;
     z-index: 200;
 }
-
-@keyframes glowPulse {
-    0%, 100% { 
-        text-shadow: 0 0 4px rgba(255, 224, 150, 0.6),
-                     0 0 8px rgba(255, 210, 100, 0.5),
-                     0 0 14px rgba(200, 130, 40, 0.3);
-    }
-    50% { 
-        text-shadow: 0 0 6px rgba(255, 235, 170, 0.8),
-                     0 0 12px rgba(255, 215, 120, 0.6),
-                     0 0 20px rgba(210, 140, 60, 0.4);
-    }
-}
-
+    
 .board p {
     margin: 0 0 14px;
+    font-size: 1.8em;
+
+    /* Solid warm bronze-gold tone */
+    color: #d58a1f;
+
+    /* Subtle depth for readability */
+    text-shadow: 
+        0 2px 3px rgba(80, 40, 10, 0.6),
+        0 0 3px rgba(255, 200, 120, 0.4);
 }
 
 .arrow-down {
@@ -63,15 +131,22 @@
     height: 0;
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
-    border-top: 22px solid #e9c168; /* softer gold */
-    animation: bounce 1s infinite;
-    filter: drop-shadow(0 0 4px rgba(255, 224, 150, 0.7));
+
+    /* Same exact color as text */
+    border-top: 22px solid #d58a1f;
+
+    /* Same shadow for consistency */
+    filter: drop-shadow(0 2px 3px rgba(80, 40, 10, 0.6))
+            drop-shadow(0 0 3px rgba(255, 200, 120, 0.4));
+
+    animation: bounce 1.2s infinite;
 }
 
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
 }
+
 
 /* Fullscreen background video */
 #train {
@@ -83,6 +158,6 @@
     height: 100vh;
     width: 100vw;
     object-fit: cover;   /* changed to cover so it looks cinematic */
-    z-index: -1;
+    z-index: 1000;
     background-color: black;
 }
