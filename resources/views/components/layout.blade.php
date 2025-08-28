@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/wizards.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/recruit.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/cast.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/quiz.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/quiz.css') }}"
 
     {{ $head ?? '' }}
 </head>
