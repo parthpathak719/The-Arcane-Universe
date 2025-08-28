@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
         station.muted = false;
     })
     station.addEventListener('timeupdate', () => {
-        if(station.currentTime >= 6.2){
+        if(station.currentTime >= 6.25){
             board.style.display = 'block';
         }
     });
