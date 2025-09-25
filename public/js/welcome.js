@@ -5,7 +5,7 @@ const letterText = document.getElementById('letter-text');
 const music = document.getElementById('themeMusic');
 
 const message = `
-<h1 style='text-align:center;'><b>Welcome to the Wizarding Archives</b></h1>
+<h1 style='text-align:center;'><b>Welcome To The Arcane Universe</b></h1>
 Dear Student,<br>
 We are pleased to inform you that you have been granted access to the <strong>Wizarding Archives</strong>, 
 a collection of enchanted records, ancient spells, and hidden histories preserved through centuries of magical tradition.
@@ -22,7 +22,7 @@ Use what you uncover with <b>wisdom</b>, <b>curiosity</b>, and <b>care</b>. The 
 With great respect,<br>
 <strong>Parth Pathak</strong><br>
 <i>Keeper of the Scrolls</i><br>
-<i>Hogwarts School of Witchcraft and Wizardry</i><br><br>
+<i>Hogwarts Archives of Magic</i><br><br>
 <div style="text-align:center;"><a href="/platform">Go To Platform</a></div>
 `;
 

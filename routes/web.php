@@ -9,11 +9,11 @@ Route::get('/platform',[WizardController::class,'platform'])->name('platform');
 
 Route::get('/kingcross',[WizardController::class,'kingcross'])->name('kingcross');
 
-Route::get('/castle',[WizardController::class,'castle'])->name('castle');
+Route::get('/hogwarts',[WizardController::class,'castle'])->name('castle');
 
 Route::get('/houses',[WizardController::class,'houses'])->name('houses');
 
-Route::get('/wizards/{id}',[WizardController::class,'wizards'])->name('wizards');
+Route::get('/sorcerers/{id}',[WizardController::class,'wizards'])->name('wizards');
 Route::get('/edit/{id}',[WizardController::class,'edit'])->name('edit');
 Route::put('/editAction/{id}',[WizardController::class,'editAction'])->name('editAction');
 Route::delete('/delete/{id1}/{id2}',[WizardController::class,'destroy'])->name('destroy');

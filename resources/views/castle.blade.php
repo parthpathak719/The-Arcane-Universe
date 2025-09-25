@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Castle</title>
+    <title>Hogwarts</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon9.ico') }}">
 </head>
 <body>

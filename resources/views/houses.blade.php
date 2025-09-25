@@ -12,7 +12,7 @@
         <div id="modal-content">
             <span id="close" onclick="document.getElementById('id01').style.display='none'">&times;</span>
             <h1>Welcome To Houses!!</h1>
-            <p>Choose Your House</p>
+            <p>Your House Awaits— Discover The Sorcerers Within</p>
         </div>
     </div>
 
