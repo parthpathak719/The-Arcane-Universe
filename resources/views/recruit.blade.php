@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot name="head">
-        <title>Recruit</title>
+        <title>Enshrine</title>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon5.ico') }}">
     </x-slot>
     <style>
@@ -24,8 +24,8 @@
         <div class="modal3" id="id03">
             <div id="modal-content3">
                 <span id="close3" onclick="document.getElementById('id03').style.display='none';">&times;</span>
-                <h1>Welcome To Recruit!!</h1>
-                <p>Fill Out The Form To Recruit A "Sorcerer"</p>
+                <h1>Welcome To Enshrine!!</h1>
+                <p>Fill Out The Form To Enshrine A "Sorcerer"</p>
             </div>
         </div>
     @endif
@@ -36,7 +36,7 @@
 
     <form id="create" name="create" autocomplete="on" method="post" action="{{ route('recruitAction') }}">
         @csrf
-        <h1>Recruit Sorcerer</h1>
+        <h1>Enshrine Sorcerer</h1>
 
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" value="{{ old('name') }}" required placeholder="Enter name">

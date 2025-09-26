@@ -20,7 +20,7 @@ Route::delete('/delete/{id1}/{id2}',[WizardController::class,'destroy'])->name('
 
 Route::get('/details/{id}',[WizardController::class,'details'])->name('details');
 
-Route::get('/recruit',[WizardController::class,'recruit'])->name('recruit');
+Route::get('/enshrine',[WizardController::class,'recruit'])->name('recruit');
 Route::post('/recruitAction',[WizardController::class,'recruitAction'])->name('recruitAction');
 
 Route::get('/cast',[WizardController::class,'cast'])->name('cast');

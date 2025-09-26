@@ -17,7 +17,7 @@
         <a href="{{ route('kingcross')}}">King Cross</a>
         <a href="{{ route('castle')}}">Hogwarts</a>
         <a href="{{ route('houses') }}">Houses</a>
-        <a href="{{ route('recruit') }}">Recruit</a>
+        <a href="{{ route('recruit') }}">Enshrine</a>
         <a href="{{ route('cast') }}">Cast</a>
         <a href="{{ route('quiz') }}">Quiz</a>
     </nav>
