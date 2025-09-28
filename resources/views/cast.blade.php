@@ -8,7 +8,7 @@
         <div id="modal-content5">
             <span id="close5">&times;</span>
                 <h1>Welcome To Cast!!</h1>
-                <p>Meet the magical cast of Harry Potter from the movies!!</p>
+                <p>Meet The Magical Cast Of Harry Potter From The Movies!!</p>
         </div>
     </div>
 

@@ -25,7 +25,7 @@
             <div id="modal-content3">
                 <span id="close3" onclick="document.getElementById('id03').style.display='none';">&times;</span>
                 <h1>Welcome To Enshrine!!</h1>
-                <p>Fill Out The Form To Enshrine A "Sorcerer"</p>
+                <p>Fill Out The Form To "Enshrine" A Sorcerer</p>
             </div>
         </div>
     @endif
