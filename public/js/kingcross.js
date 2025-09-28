@@ -34,7 +34,7 @@ board.addEventListener('click', () => {
     train.muted = false;
     train.addEventListener('timeupdate', () => {
         if(train.currentTime >= train.duration){
-            window.location.href = "/castle";
+            window.location.href = "/hogwarts";
         }
     });
 });

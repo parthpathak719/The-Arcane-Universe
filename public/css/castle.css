@@ -1,0 +1,318 @@
+/* Fullscreen background video */
+#castle, #hall {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    background-color: black;
+}
+
+#hall {
+    display: none;
+}
+
+/* First Modal */
+.modal8 {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 110px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(12, 10, 23, 0.80); /* very deep blue-black overlay */
+    backdrop-filter: blur(10px) brightness(0.85);
+}
+
+#modal-content8 {
+    position: relative;
+    margin: auto;
+    padding: 44px 54px 38px 54px;
+    width: 48%;
+    max-width: 700px;
+    background: linear-gradient(135deg, #231c42 50%, #34425c 100%);
+    border-radius: 20px;
+    border: 2px solid #7faaff; /* Blue-silver border */
+    box-shadow:
+        0 0 44px 2px #7faaff,
+        0 8px 40px 2px #182037;
+    font-family: 'Cinzel', 'Georgia', serif;
+    font-weight: bold;
+    text-align: center;
+    color: #e8e6ff;
+    animation: modalPop 0.5s ease forwards;
+}
+
+@keyframes modalPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Modal Title */
+#modal-content8 h1 {
+    font-size: 2.35rem;
+    margin-bottom: 15px;
+    color: #e8e6ff;
+    letter-spacing: 2px;
+    text-shadow:
+        0 2px 20px #bfc8ef,
+        0 0 18px #331d68,
+        0 0 48px #7faaff;
+}
+
+/* Modal Subtitle */
+#modal-content8 p {
+    font-size: 1.27rem;
+    color: #a2cafe;
+    text-shadow:
+        0 1px 12px #4f6298,
+        0 0 24px #7faaff;
+    margin-bottom: 0;
+}
+
+/* Close Button */
+#close8 {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #7faaff;
+    background: transparent;
+    border: none;
+    transition: color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+#close8:hover {
+    color: #e8e6ff;
+    text-shadow: 0 0 30px #bddcff;
+    transform: scale(1.14) rotate(10deg);
+}
+
+
+/* Buttons (Enter Castle, Houses) */
+.enter-castle {
+    display: none;
+    position: absolute;
+    bottom: 330px;
+    cursor: pointer;
+    height: 200px;
+    left: 63%;
+    transform: translateX(-50%);
+    font-family: 'Cinzel', 'Georgia', serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 200;
+}
+
+.enter-castle p{
+    margin: 0 0 14px;
+    font-size: 1.8em;
+    color: #39FF14;
+    text-shadow: 0 2px 3px rgba(80,40,10,0.6),
+                0 0 3px rgba(255,200,120,0.4);
+}
+
+/* Arrow */
+.arrow-down {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 22px solid #39FF14;
+    animation: bounce 1.2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Wand Styling and Centering */
+.spell {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+    width: auto;
+}
+
+.spell p {
+    margin: 0 0 18px;
+    font-size: 2em;
+    color: #2ba8ad; /* Soft neon cyan */
+    text-shadow:
+        0 0 18px #00fff7,
+        0 0 38px #39FF14,
+        0 0 55px #007766;
+    font-family: 'Cinzel', 'Georgia', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Adjusted Arrow pointing to wand with matching colors */
+.spell .arrow-up {
+    margin: 40px auto 8px;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 24px solid #2ba8ad; /* Same neon cyan as text */
+    filter: drop-shadow(0 0 12px #00fff7);
+    animation: bounce 1.2s infinite;
+}
+
+#wand {
+    width: 140px;
+    filter: drop-shadow(0 0 25px #7afcf8)
+            drop-shadow(0 0 35px #39FF14)
+            drop-shadow(0 0 45px #00fff7);
+    transition: transform 0.3s ease;
+}
+
+#wand:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(-5deg);
+    filter: drop-shadow(0 0 42px #00fff7)
+            drop-shadow(0 0 55px #39FF14)
+            drop-shadow(0 0 65px #7afcf8);
+}
+
+.modal9 {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(12, 5, 1, 0.9); /* near black with high opacity */
+    backdrop-filter: blur(5px);
+    overflow: auto;
+}
+
+#modal-content9 {
+    position: relative;
+    margin: auto;
+    padding: 40px 50px;
+    width: 30%;
+    max-width: 680px;
+    background: linear-gradient(135deg, #332a13 0%, #7e6d2c 100%);
+    background-image:
+      url('https://www.transparenttextures.com/patterns/pw-maze-white.png'); /* Subtle parchment texture */
+    border: 4px solid #bfa84e;
+    border-radius: 20px;
+    box-shadow:
+        0 0 25px rgba(191, 168, 78, 0.9),
+        0 0 40px rgba(94, 79, 45, 0.6) inset,
+        0 16px 30px rgba(0, 0, 0, 0.8);
+    font-family: 'Cinzel', 'Georgia', serif;
+    font-weight: bold;
+    text-align: center;
+    color: #f4e1a1; /* Pale golden parchment text */
+    text-shadow:
+      1px 1px 0 #4f4325,
+      2px 2px 6px #d1c47a,
+      0 0 16px #d1c47a;
+    letter-spacing: 1.6px;
+    animation: modalPop 0.5s ease forwards;
+}
+
+#modal-content9 h1 {
+    font-size: 2.7rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #f7e6a6;
+    text-shadow:
+      2px 2px 5px #a7851b,
+      0 0 15px #eedf7a;
+}
+
+#modal-content9 p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff4bc;
+    text-shadow:
+      1px 1px 3px #725e1a,
+      0 0 12px #ffef9b;
+    margin-top: 0;
+}
+
+#close9 {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #bfa84e;
+    cursor: pointer;
+    transition: color 0.4s ease, transform 0.3s ease;
+    text-shadow: 1px 1px 2px #3a2e00;
+}
+
+#close9:hover {
+    color: #fff9b1;
+    transform: scale(1.25) rotate(20deg);
+    text-shadow: 0 0 25px #fff9b1;
+}
+
+
+
+.enter-houses {
+    display: none;
+    position: absolute;
+    /* Position centered above the hat; adjust 'top' and 'left' as needed */
+    top: 60%;
+    left: 53%;
+    transform: translate(-50%, 0);
+    height: 300px;
+    cursor: pointer;
+    font-family: 'Cinzel', 'Georgia', serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 200;
+    width: max-content;
+}
+
+.enter-houses p {
+    margin: 0 0 10px 0;
+    font-size: 2.2em;
+    /* Warm gold/amber with soft glow, harmonizes with your feast-hall background */
+    color: #e0bf3f;
+    text-shadow:
+        0 0 12px #ffb347,
+        0 0 24px #a17c1b,
+        0 0 50px #ffedb0;
+}
+
+.enter-houses .arrow-down {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 28px solid #e0bf3f;
+    filter: drop-shadow(0 0 12px #ffb347);
+    animation: bounce 1.2s infinite;
+}
+
