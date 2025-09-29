@@ -80,15 +80,15 @@
     top: 16px;
     font-size: 30px;
     font-weight: bold;
-    color: #6fe7fc;
+    color: #b0dbff;
     background: transparent;
     border: none;
     transition: color 0.3s, transform 0.2s;
-    text-shadow: 0 0 12px #a6f3fe99;
+    text-shadow: 0 0 12px #b0dbff;
 }
 #close8:hover {
     color: #fff;
-    text-shadow: 0 0 30px #6fe7fc;
+    text-shadow: 0 0 30px #a3cdff;
     transform: scale(1.09) rotate(10deg);
 }
 
