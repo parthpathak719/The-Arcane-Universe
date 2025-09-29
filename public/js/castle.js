@@ -6,6 +6,7 @@ const castle = document.getElementById('castle');
 const enterCastle = document.querySelector('.enter-castle');
 const sound1 = document.getElementById('normal-audio');
 const sound2 = new Audio('/audio/lumos.mp4');
+const sound3 = new Audio('/audio/ha.mp4');
 const hall = document.getElementById('hall');
 const enterHouses = document.querySelector('.enter-houses');
 const spell = document.querySelector('.spell');
@@ -79,6 +80,10 @@ window.addEventListener('load', () => {
 
     // Go to Houses
     enterHouses.addEventListener('click', () => {
-        window.location.href = '/houses';
+        sound3.play();
+        setTimeout(() => {
+            enterHouses.style.display = 'none';
+            window.location.href = '/houses';
+        }, 1000);
     });
 });
