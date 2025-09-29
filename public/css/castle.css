@@ -25,28 +25,74 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(12, 10, 23, 0.80); /* very deep blue-black overlay */
-    backdrop-filter: blur(10px) brightness(0.85);
+    background: rgba(20, 24, 39, 0.83); /* blue-black overlay */
+    backdrop-filter: blur(8px) brightness(0.80);
 }
 
 #modal-content8 {
     position: relative;
     margin: auto;
-    padding: 44px 54px 38px 54px;
-    width: 48%;
+    padding: 48px 60px 38px 60px;
+    width: 47%;
     max-width: 700px;
-    background: linear-gradient(135deg, #231c42 50%, #34425c 100%);
-    border-radius: 20px;
-    border: 2px solid #7faaff; /* Blue-silver border */
+    background: rgba(24, 25, 48, 0.82); /* true glassmorphic effect */
+    border-radius: 22px;
+    border: 1.5px solid #77b6ff;        /* Soft cyan accent */
     box-shadow:
-        0 0 44px 2px #7faaff,
-        0 8px 40px 2px #182037;
+        0 0 56px 3px #76b4fb,
+        0 0 0 8px rgba(119,182,255,0.11) inset,
+        0 8px 32px 1px #0d1637a9;
     font-family: 'Cinzel', 'Georgia', serif;
     font-weight: bold;
     text-align: center;
-    color: #e8e6ff;
-    animation: modalPop 0.5s ease forwards;
+    color: #e0e6ee;
+    backdrop-filter: blur(15px) saturate(1.23);
+    animation: modalPop 0.4s ease forwards;
 }
+
+/* Modal Title */
+#modal-content8 h1 {
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+    color: #e6eef7;
+    letter-spacing: 1.5px;
+    text-shadow:
+        0 2px 18px #33badc,
+        0 0 28px #384186,
+        0 0 38px #fff;
+}
+
+/* Modal Subtitle */
+#modal-content8 p {
+    font-size: 1.2rem;
+    color: #b1e6f8;
+    text-shadow:
+        0 1px 10px #457f95,
+        0 0 18px #a6f3fe99;
+    margin-bottom: 0;
+}
+
+/* Close Button */
+#close8 {
+    position: absolute;
+    cursor: pointer;
+    right: 18px;
+    top: 16px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #6fe7fc;
+    background: transparent;
+    border: none;
+    transition: color 0.3s, transform 0.2s;
+    text-shadow: 0 0 12px #a6f3fe99;
+}
+#close8:hover {
+    color: #fff;
+    text-shadow: 0 0 30px #6fe7fc;
+    transform: scale(1.09) rotate(10deg);
+}
+
+
 
 @keyframes modalPop {
     0% {
@@ -58,48 +104,6 @@
         transform: scale(1);
     }
 }
-
-/* Modal Title */
-#modal-content8 h1 {
-    font-size: 2.35rem;
-    margin-bottom: 15px;
-    color: #e8e6ff;
-    letter-spacing: 2px;
-    text-shadow:
-        0 2px 20px #bfc8ef,
-        0 0 18px #331d68,
-        0 0 48px #7faaff;
-}
-
-/* Modal Subtitle */
-#modal-content8 p {
-    font-size: 1.27rem;
-    color: #a2cafe;
-    text-shadow:
-        0 1px 12px #4f6298,
-        0 0 24px #7faaff;
-    margin-bottom: 0;
-}
-
-/* Close Button */
-#close8 {
-    position: absolute;
-    right: 20px;
-    top: 16px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #7faaff;
-    background: transparent;
-    border: none;
-    transition: color 0.3s, transform 0.2s;
-    cursor: pointer;
-}
-#close8:hover {
-    color: #e8e6ff;
-    text-shadow: 0 0 30px #bddcff;
-    transform: scale(1.14) rotate(10deg);
-}
-
 
 /* Buttons (Enter Castle, Houses) */
 .enter-castle {

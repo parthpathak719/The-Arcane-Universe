@@ -21,6 +21,24 @@
         $house = $wizards->first()->house;
     @endphp
     
+    @if ($house->name == 'Gryffindor') 
+        <audio id="normal-audio" muted>
+            <source src="{{ asset('audio/gryffindor.mp4') }}" type="audio/mp4">
+        </audio>
+    @elseif ($house->name == 'Slytherin')
+        <audio id="normal-audio" muted>
+            <source src="{{ asset('audio/slytherin.mp4') }}" type="audio/mp4">
+        </audio>
+    @elseif ($house->name == 'Hufflepuff')
+        <audio id="normal-audio" muted>
+            <source src="{{ asset('audio/hufflepuff.mp4') }}" type="audio/mp4">
+        </audio>
+    @else
+        <audio id="normal-audio" muted>
+            <source src="{{ asset('audio/ravenclaw.mp4') }}" type="audio/mp4">
+        </audio>
+    @endif
+
    <div id="house-details">
       <h1 id="house-name">{{ $house->name }}</h1>
       <div id="founder-box">
@@ -57,4 +75,5 @@
             </div>
         @endforeach
     </div>
+    <script src={{ asset('js/wizards.js') }}></script>
 </x-layout>

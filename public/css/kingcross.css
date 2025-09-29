@@ -115,14 +115,11 @@
 .board p {
     margin: 0 0 14px;
     font-size: 1.8em;
-
-    /* Solid warm bronze-gold tone */
-    color: #39FF14;
-
-    /* Subtle depth for readability */
+    color: #FFD366; /* Warm vibrant gold, less neon */
     text-shadow: 
-        0 2px 3px rgba(80, 40, 10, 0.6),
-        0 0 3px rgba(255, 200, 120, 0.4);
+        0 2px 8px #634313bb,           /* Deep brown-gold glow for readability */
+        0 0 18px #fff6c380, 
+        0 0 2px #9a6706bb;             /* Subtle outline against steam */
 }
 
 .arrow-down {
@@ -131,16 +128,13 @@
     height: 0;
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
-
-    /* Same exact color as text */
-    border-top: 22px solid #39FF14;
-
-    /* Same shadow for consistency */
-    filter: drop-shadow(0 2px 3px rgba(80, 40, 10, 0.6))
-            drop-shadow(0 0 3px rgba(255, 200, 120, 0.4));
-
+    border-top: 22px solid #FFD366; /* Matches text */
+    filter:
+        drop-shadow(0 2px 6px #634313bb)
+        drop-shadow(0 0 16px #fff6c390);
     animation: bounce 1.2s infinite;
 }
+
 
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }

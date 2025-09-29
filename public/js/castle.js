@@ -33,6 +33,8 @@ window.addEventListener('load', () => {
         modal1.style.display = 'none';
         castle.play();
         castle.muted = false;
+        sound1.play();
+        sound1.muted = false;
     });
 
     // Castle finished -> show Enter Castle
@@ -81,8 +83,8 @@ window.addEventListener('load', () => {
     // Go to Houses
     enterHouses.addEventListener('click', () => {
         sound3.play();
+        enterHouses.style.display = 'none';
         setTimeout(() => {
-            enterHouses.style.display = 'none';
             window.location.href = '/houses';
         }, 1000);
     });
