@@ -11,7 +11,7 @@
     {{ $head ?? '' }}
 </head>
 <body>
-    <nav style="font-family:Georgia,serif;">
+    <nav style="font-family:Cinzel,Georgia,serif;">
         <a href="{{ route('welcome') }}">Welcome</a>
         <a href="{{ route('platform')}}">Platform 9¾</a>
         <a href="{{ route('kingcross')}}">King Cross</a>
