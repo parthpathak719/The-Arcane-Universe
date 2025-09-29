@@ -92,7 +92,7 @@ class WizardSeeder extends Seeder
                 "patronus"=>"Pine Marten",
                 "title"=>"Head of the Department of Magical Law Enforcement, Head of the Department of International Magical Cooperation",
                 "bio"=>"Bartemius 'Barty' Crouch Sr. was a high-ranking official in the British Ministry of Magic, known for his strict and often ruthless approach to law enforcement, particularly during the First Wizarding War. He headed the Department of Magical Law Enforcement and later the Department of International Magical Cooperation. His career was marked by both ambition and tragedy, culminating in his death at the hands of his own son, Barty Crouch Jr. ",
-                "quote"=>"'Dark and difficult times lie ahead. Soon we must all face the choice between what is right and what is easy'",
+                "quote"=>"'Dark and difficult times lie ahead. Soon we must all face the choice between what is right and what is easy.'",
                 "image"=>"https://i.pinimg.com/736x/04/19/28/041928197ab6e323a93bad6595bf9bf2.jpg",
                 "background_image"=>"https://contentful.harrypotter.com/usf1vwtuqyxm/5Ws80pDZzasGu8wUw20iAU/e1298b52aebfd6cc462fbc3c0fdd05d1/WB_F4_BartyCrouchSr._CrouchClose-Up_HP4D-5202.jpg?q=75&fm=webp&w=914"
             ],

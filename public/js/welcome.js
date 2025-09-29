@@ -5,7 +5,7 @@ const letterText = document.getElementById('letter-text');
 const music = document.getElementById('themeMusic');
 
 const message = `
-<h1 style='text-align:center;'><b>Welcome To "The Arcane Universe"</b></h1>
+<h1 style='text-align:center;'><b>Welcome To "The Arcane Universe"!!</b></h1>
 Dear Student,<br>
 We are pleased to inform you that you have been granted access to the <strong>Wizarding Archives</strong>, 
 a collection of enchanted records, ancient spells, and hidden histories preserved through centuries of magical tradition.

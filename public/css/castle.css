@@ -104,42 +104,43 @@
 /* Buttons (Enter Castle, Houses) */
 .enter-castle {
     display: none;
-    position: absolute;
-    bottom: 330px;
+    height: 400px;
     cursor: pointer;
-    height: 200px;
-    left: 63%;
-    transform: translateX(-50%);
+    position: absolute;
+    top: 15%; /* adjust slightly as needed */
+    left: 53.5%; /* adjust for perfect center over middle tower */
+    transform: translate(-50%, 0);
     font-family: 'Cinzel', 'Georgia', serif;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 1px;
     z-index: 200;
+    width: max-content;
 }
-
-.enter-castle p{
-    margin: 0 0 14px;
-    font-size: 1.8em;
-    color: #39FF14;
-    text-shadow: 0 2px 3px rgba(80,40,10,0.6),
-                0 0 3px rgba(255,200,120,0.4);
+.enter-castle p {
+    margin: 0 0 8px 0;
+    font-size: 2.1em;
+    color: #e6f0ff;  /* Icy soft blue */
+    text-shadow:
+        0 0 20px #7faaff,
+        0 0 36px #4884b8,
+        0 0 40px #fff;
+    letter-spacing: 1px;
 }
-
-/* Arrow */
-.arrow-down {
+.enter-castle .arrow-down {
     margin: 0 auto;
     width: 0;
     height: 0;
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-top: 22px solid #39FF14;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 22px solid #e6f0ff;
+    filter: drop-shadow(0 0 10px #7faaff) drop-shadow(0 0 16px #4193e7);
     animation: bounce 1.2s infinite;
 }
-
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
 }
+
 
 /* Wand Styling and Centering */
 .spell {

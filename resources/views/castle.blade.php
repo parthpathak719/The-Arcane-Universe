@@ -11,7 +11,7 @@
     
     <!-- Background audio -->
     <audio id="normal-audio" loop muted>
-        <source src="{{ asset('audio/song.mp4') }}" type="audio/mp4">
+        <source src="{{ asset('audio/song2.mp4') }}" type="audio/mp4">
     </audio>
 
     <!-- Background video -->
