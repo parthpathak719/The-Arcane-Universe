@@ -331,7 +331,7 @@ class WizardSeeder extends Seeder
             ],
 
             [
-              "name" => "Lily J. Potter",
+              "name" => "Lily James Potter",
               "type" => "Witch",
               "house_id" => 1,
               "wand" => "Unknown",
