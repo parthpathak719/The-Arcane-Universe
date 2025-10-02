@@ -338,7 +338,7 @@ class WizardSeeder extends Seeder
               "specialisation" => "Charms, Protective Magic, Potion Making, Nonverbal Magic",
               "patronus" => "Doe",
               "title" => "Head Girl, Member of the Order Of The Phoenix",
-              "bio" => "Lily J. Potter was a brilliant Muggle-born witch, known for her strong moral values and exceptional skill in charms. A member of the original Order of the Phoenix, she sacrificed herself to protect her son, casting the powerful love magic that shielded Harry from Voldemort's curse.",
+              "bio" => "Lily James Potter was a brilliant Muggle-born witch, known for her strong moral values and exceptional skill in charms. A member of the original Order of the Phoenix, she sacrificed herself to protect her son, casting the powerful love magic that shielded Harry from Voldemort's curse.",
               "image" => "https://static.wikia.nocookie.net/heroes-and-villain/images/a/a9/Lily_DHP1.png",
               "background_image" => "https://static.wikia.nocookie.net/heroes-and-villain/images/a/a9/Lily_DHP1.png"
             ],
