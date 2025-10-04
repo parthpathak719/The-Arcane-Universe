@@ -98,7 +98,7 @@
         <span class="error" id="background-error"></span>
         <br>
 
-        <input id="recruit" type="submit" value="Recruit">&nbsp;
+        <input id="recruit" type="submit" value="Enshrine">&nbsp;
         <input id="clear" type="reset" value="Clear">
 
         @if ($errors->any())
