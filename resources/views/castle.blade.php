@@ -41,11 +41,6 @@
         <p>Use Your Wand</p>
     </div>
 
-    <!-- Wand sound -->
-    <audio id="lumos" muted>
-        <source src="{{ asset('audio/lumos.mp4') }}" type="audio/mp4">
-    </audio>
-
     <!-- Hall video -->
     <video id="hall" muted>
         <source src="{{ asset('videos/hall.mp4') }}" type="video/mp4">
