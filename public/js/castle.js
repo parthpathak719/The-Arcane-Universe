@@ -27,65 +27,65 @@ window.addEventListener('load', () => {
         castle.pause();
         castle.muted = true;
     }, 5000);
+});
 
-    // Close modal -> resume castle
-    close1.addEventListener('click', () => {
-        modal1.style.display = 'none';
-        castle.play();
-        castle.muted = false;
-        sound1.play();
-        sound1.muted = false;
-    });
+// Close modal -> resume castle
+close1.addEventListener('click', () => {
+    modal1.style.display = 'none';
+    castle.play();
+    castle.muted = false;
+    sound1.play();
+    sound1.muted = false;
+});
 
-    // Castle finished -> show Enter Castle
-    castle.addEventListener('ended', () => {
-        enterCastle.style.display = 'block';
-    });
+// Castle finished -> show Enter Castle
+castle.addEventListener('ended', () => {
+    enterCastle.style.display = 'block';
+});
 
-    // Enter Castle -> switch to hall + wand
-    enterCastle.addEventListener('click', () => {
-        castle.style.display = 'none';
-        enterCastle.style.display = 'none';
-        hall.style.display = 'block';
-        spell.style.display = 'flex'; 
-    });
+// Enter Castle -> switch to hall + wand
+enterCastle.addEventListener('click', () => {
+    castle.style.display = 'none';
+    enterCastle.style.display = 'none';
+    hall.style.display = 'block';
+    spell.style.display = 'flex'; 
+});
 
-    // Wand click -> play lumos, start hall
-    spell.addEventListener('click', () => {
-        sound2.play();
-        spell.style.display = 'none';
+// Wand click -> play lumos, start hall
+spell.addEventListener('click', () => {
+    sound2.play();
+    spell.style.display = 'none';
 
-        setTimeout(() => {
-            hall.play();
-            hall.muted = false;
-
-            // After ~5.3s -> show second modal
-            setTimeout(() => {
-                modal2.style.display = 'block';
-                hall.pause();
-                hall.muted = true;
-            }, 5300);
-        }, 2000);
-    });
-
-    // Close modal -> resume hall
-    close2.addEventListener('click', () => {
-        modal2.style.display = 'none';
+    setTimeout(() => {
         hall.play();
         hall.muted = false;
-    });
 
-    // Hall finished -> show Enter Houses
-    hall.addEventListener('ended', () => {
-        enterHouses.style.display = 'block';
-    });
-
-    // Go to Houses
-    enterHouses.addEventListener('click', () => {
-        sound3.play();
-        enterHouses.style.display = 'none';
+        // After ~5.3s -> show second modal
         setTimeout(() => {
-            window.location.href = '/houses';
-        }, 1000);
-    });
+            modal2.style.display = 'block';
+            hall.pause();
+            hall.muted = true;
+        }, 5300);
+    }, 2000);
+});
+
+// Close modal -> resume hall
+close2.addEventListener('click', () => {
+    modal2.style.display = 'none';
+    hall.play();
+    hall.muted = false;
+});
+
+// Hall finished -> show Enter Houses
+hall.addEventListener('ended', () => {
+    enterHouses.style.display = 'block';
+});
+
+// Go to Houses
+enterHouses.addEventListener('click', () => {
+    sound3.play();
+    enterHouses.style.display = 'none';
+    setTimeout(() => {
+        window.location.href = '/houses';
+    }, 1000);
 });

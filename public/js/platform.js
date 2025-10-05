@@ -13,11 +13,12 @@ window.addEventListener('load', () => {
     modal.style.display = 'block';
     bgVideo.play();
     bgVideo.muted = false;
-    close.addEventListener('click', () => {
-        modal.style.display = 'none';
-        bgVideo.play();
-        bgVideo.muted = false;
-    });
+});
+
+close.addEventListener('click', () => {
+    modal.style.display = 'none';
+    bgVideo.play();
+    bgVideo.muted = false;
 });
 
 // Click ticket
@@ -37,15 +38,15 @@ wallVideo.addEventListener('timeupdate', function() {
     if (wallVideo.currentTime >= wallVideo.duration) {
         wallVideo.pause();
         gothrough.style.display = 'block';
-
-        // Click gothrough to run animation
-        gothrough.addEventListener('click', function() {
-            sound.play();
-            wallVideo.classList.add('run-to-wall');
-            gothrough.style.display = 'none';
-            wallVideo.muted = true;
-        });
     }
+});
+
+// Click gothrough to run animation
+gothrough.addEventListener('click', function() {
+    sound.play();
+    wallVideo.classList.add('run-to-wall');
+    gothrough.style.display = 'none';
+    wallVideo.muted = true;
 });
 
 // When run animation ends → blackout & redirect
