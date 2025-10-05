@@ -18,7 +18,6 @@ window.addEventListener('load', () => {
         bgVideo.play();
         bgVideo.muted = false;
     });
-    
 });
 
 // Click ticket
