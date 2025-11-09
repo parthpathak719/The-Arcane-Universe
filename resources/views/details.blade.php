@@ -46,11 +46,11 @@
                 <source src="{{ asset('audio/song.mp4') }}" type="audio/mp4">
             </audio>
         @else
-            @if($details->name == "Albus Percival Wulfric Brian Dumbledore")
+            @if($details->id == 3)
                 <audio id="normal-audio" loop muted>
                     <source src="{{ asset('audio/dumbledore.mp4') }}" type="audio/mp4">
                 </audio>
-            @elseif($details->name == "Harry James Potter")
+            @elseif($details->id == 19)
                 <audio id="normal-audio" loop muted>
                     <source src="{{ asset('audio/harry.mp4') }}" type="audio/mp4">
                 </audio>
