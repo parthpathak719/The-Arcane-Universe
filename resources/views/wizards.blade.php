@@ -57,5 +57,4 @@
             </div>
         @endforeach
     </div>
-    <script src={{ asset('js/wizards.js') }}></script>
 </x-layout>
