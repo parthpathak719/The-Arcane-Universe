@@ -63,6 +63,9 @@ class WizardController extends Controller
         return redirect()->route('wizards',['id'=>$validated['house_id']])->with('success','Sorcerer Modified Successfully!!');
     }
     public function destroy($id1,$id2){
+        if ($id1 <= 41) {
+            return redirect()->back()->with('success', 'This sorcerer cannot be deleted.');
+        }
         $wizard=Wizard::findorFail($id1);
         $wizard->delete();
         return redirect()->route('wizards',['id'=>$id2])->with('success','Sorcerer Deleted Successfully!!');

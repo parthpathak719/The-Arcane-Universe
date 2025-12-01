@@ -49,11 +49,13 @@
                 <p class="wizard-name">{{ $wizard->name }}</p>
                 <a href="{{ route('details',$wizard->id) }}" class="view-details">View Details</a>
                 <a href="{{ route('edit',$wizard->id) }}" class="edit-details">Edit</a>
-                <form name="my" id="my" method="post" action="{{ route('destroy',['id1'=>$wizard->id,'id2'=>$house->id]) }}">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" onclick="return confirm('Delete Sorcerer?')">Delete</button>
-                </form>
+                @if ($wizard->id > 41)
+                    <form name="my" id="my" method="post" action="{{ route('destroy',['id1'=>$wizard->id,'id2'=>$house->id]) }}">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" onclick="return confirm('Delete Sorcerer?')">Delete</button>
+                    </form>
+                @endif
             </div>
         @endforeach
     </div>
