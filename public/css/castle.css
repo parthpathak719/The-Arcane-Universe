@@ -92,8 +92,6 @@
     transform: scale(1.09) rotate(10deg);
 }
 
-
-
 @keyframes modalPop {
     0% {
         opacity: 0;
