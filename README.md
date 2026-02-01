@@ -2,4 +2,14 @@
 
 A Harry Potter–inspired interactive web application built with Laravel, featuring immersive visuals, animations, and audio-visual storytelling.
 
-**Technologies:** Laravel, PHP, Blade, JavaScript, CSS, SQLite, Cloudinary, Apache  
+### Technologies Used
+- Laravel (PHP Framework)
+- PHP
+- Blade Templating Engine
+- JavaScript
+- CSS
+- SQLite Database
+- Cloudinary (Image Hosting)
+- Apache (XAMPP)
+
+
