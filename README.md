@@ -10,9 +10,9 @@ The Arcane Universe is a dynamic Laravel-based web application featuring interac
 
 - 🏰 Hogwarts-style immersive UI
 - 📜 Dynamic character & archive records
+- 🎬 Cinematic animations and themed styling
 - 🧠 AI-generated visuals integration (GeminiPro)
 - ☁️ Cloud-based media management (Cloudinary)
-- 🔐 Authentication & user session handling
 - 🌐 Full-stack deployment workflow
 
 ---
