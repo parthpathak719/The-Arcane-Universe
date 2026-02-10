@@ -19,6 +19,10 @@ close.addEventListener('click', () => {
     modal.style.display = 'none';
     bgVideo.play();
     bgVideo.muted = false;
+    setTimeout(() => {
+        ticket.style.display = 'block';
+        document.querySelector('.arrow-label').style.display = 'block';
+    }, 3000);
 });
 
 // Click ticket

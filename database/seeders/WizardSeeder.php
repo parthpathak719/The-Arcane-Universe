@@ -270,7 +270,7 @@ class WizardSeeder extends Seeder
                "title" => "THE BOY WHO LIVED, THE CHOSEN ONE, Triwizard Champion, Head of the Auror Office",
                "bio" => "Harry James Potter is the only known survivor of the Killing Curse, earning him the title 'The Boy Who Lived'. Orphaned as a baby, he was raised by Muggle relatives before discovering he was a wizard at age eleven. At Hogwarts, he was sorted into Gryffindor and formed close bonds with Ron Weasley and Hermione Granger. He faced Lord Voldemort multiple times, ultimately destroying his Horcruxes and defeating him in the Battle of Hogwarts. Harry became a symbol of hope and resistance during the Second Wizarding War. He later joined the Ministry of Magic and became Head of the Auror Office. Harry's story embodies courage, friendship, and the enduring power of love.",
                "quote" => "'I don't go looking for trouble. Trouble usually finds me.' 'Working hard is important. But there is something that matters even more: believing in yourself.' 'EXPELLIARMUS!!'",
-               "image" => "https://pm1.aminoapps.com/6496/0b5606f62adce76a897bf26f6d0dac93c6ec272d_hq.jpg",
+               "image" => "https://res.cloudinary.com/dd4ldehqo/image/upload/v1768767930/Harrypotter_1_1_hyxpkb.jpg",
                "background_image" => "https://i.pinimg.com/736x/30/91/3e/30913eeadd01ef85903244992a17dfa7.jpg",
                "theme_song"=>"https://www.youtube.com/shorts/alfTHiLtElY?feature=share"
             ],

@@ -111,6 +111,7 @@
 
 /* Ticket */
 #ticket {
+    display: none;
     position: absolute;
     bottom: 48px;
     left: 48%;
@@ -127,6 +128,7 @@
 
 /* "Click Me!" label */
 .arrow-label {
+    display: none;
     position: absolute;
     bottom: 170px;
     left: 48%;
