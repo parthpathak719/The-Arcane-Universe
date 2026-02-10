@@ -4,7 +4,7 @@ A cinematic, full-stack web experience inspired by the magical world of Harry Po
 
 The-Arcane-Universe is a dynamic Laravel-based web application featuring interactive archives, character records, magical animations, and AI-enhanced visual elements.
 
-
+---
 
 ## ✨ Features
 
@@ -15,7 +15,7 @@ The-Arcane-Universe is a dynamic Laravel-based web application featuring interac
 - ☁️ Cloud-based media management (Cloudinary)
 - 🌐 Full-stack deployment workflow
 
-
+---
 
 ## 🏗 Tech Stack
 
