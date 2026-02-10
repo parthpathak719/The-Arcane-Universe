@@ -28,6 +28,3 @@ The Arcane Universe is a dynamic Laravel-based web application featuring interac
 - GeminiPro (AI-generated content)
 - InfinityFree (Hosting)
 - FileZilla (Deployment)
-
-php artisan serve
-
