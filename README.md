@@ -1,4 +1,4 @@
-# 🪄 The Arcane Universe
+# 🪄 The-Arcane-Universe
 
 A cinematic, full-stack web experience inspired by the magical world of Harry Potter.
 
