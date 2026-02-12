@@ -146,6 +146,10 @@ textarea::placeholder {
     font-size: 0.9rem;
 }
 
+#color{
+    color:red;
+}
+
 ul {
     padding-left: 1rem;
 }

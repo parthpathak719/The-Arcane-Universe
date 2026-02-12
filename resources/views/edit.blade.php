@@ -23,17 +23,17 @@
         @method('PUT')
         <h1>Modify Sorcerer</h1>
 
-        <label for="name">Name:</label>
+        <label for="name">Name:<span id="color">&nbsp;*</span></label>
         <input type="text" name="name" id="name" value="{{ $wizard->name }}" required autofocus placeholder="Enter name">
         <span class="error" id="name-error"></span>
         <br><br>
 
-        <label for="type">Type:</label>
+        <label for="type">Type:<span id="color">&nbsp;*</span></label>
         <input type="text" name="type" id="type" value="{{ $wizard->type }}" required placeholder="Enter type">
         <span class="error" id="type-error"></span>
         <br><br>
 
-        <label for="house">House:</label>
+        <label for="house">House:<span id="color">&nbsp;*</span></label>
         <select name="house" id="house" required>
             <option value="">Select</option>
             @foreach ($houses as $house)
@@ -43,27 +43,27 @@
         <span class="error" id="house-error"></span>
         <br><br>
 
-        <label for="wand">Wand Core:</label>
+        <label for="wand">Wand Core:<span id="color">&nbsp;*</span></label>
         <input type="text" name="wand" id="wand" value="{{ $wizard->wand }}" required placeholder="Enter wand core">
         <span class="error" id="wand-error"></span>
         <br><br>
 
-        <label for="specialisation">Specialties:</label>
+        <label for="specialisation">Specialties:<span id="color">&nbsp;*</span></label>
         <textarea name="specialisation" id="specialisation" required placeholder="Enter specialties">{{ $wizard->specialisation }}</textarea>
         <span class="error" id="specialties-error"></span>
         <br><br>
         
-        <label for="patronus">Patronus:</label>
+        <label for="patronus">Patronus:<span id="color">&nbsp;*</span></label>
         <input type="text" name="patronus" id="patronus" value="{{ $wizard->patronus }}" required placeholder="Enter patronus">
         <span class="error" id="patronus-error"></span>
         <br><br>
 
-        <label for="title">Titles:</label>
+        <label for="title">Titles:<span id="color">&nbsp;*</span></label>
         <textarea name="title" id="title" required placeholder="Enter titles">{{ $wizard->title }}</textarea>
         <span class="error" id="title-error"></span>
         <br><br>
 
-        <label for="bio">Bio:</label>
+        <label for="bio">Bio:<span id="color">&nbsp;*</span></label>
         <textarea name="bio" id="bio" required placeholder="Enter bio">{{ $wizard->bio }}</textarea>
         <span class="error" id="bio-error"></span>
         <br><br>
@@ -73,12 +73,12 @@
         <span class="error" id="quote-error"></span>
         <br><br>
 
-        <label for="image">Image Link:</label>
+        <label for="image">Image Link:<span id="color">&nbsp;*</span></label>
         <input type="url" name="image" id="image" value="{{ $wizard->image }}" required placeholder="Enter image link">
         <span class="error" id="image-error"></span>
         <br><br>
 
-        <label for="background_image">Background-Image Link:</label>
+        <label for="background_image">Background-Image Link:<span id="color">&nbsp;*</span></label>
         <input type="url" name="background_image" id="background_image" value="{{ $wizard->background_image }}" required placeholder="Enter background-image link">
         <span class="error" id="background-error"></span>
         <br><br>
