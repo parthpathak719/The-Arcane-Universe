@@ -67,7 +67,7 @@ class WizardSeeder extends Seeder
                 "bio"=>"Arthur Weasley is a beloved character from the Harry Potter series, known for his kind heart, love of Muggles, and dedication to his family and the Ministry of Magic. He is a pure-blood wizard, married to Molly Weasley, and father to seven children: Bill, Charlie, Percy, Fred, George, Ron, and Ginny. Arthur works at the Ministry of Magic, initially in the Misuse of Muggle Artefacts Office and later in the Office for the Detection and Confiscation of Counterfeit Defensive Spells and Protective Objects. He is a passionate enthusiast of Muggle culture and technology, often finding himself in humorous situations due to his fascination.",
                 "quote"=>"'Never trust anything that can think for itself... if you can't see where it keeps its brain.'",
                 "image"=>"https://static.wikia.nocookie.net/heroes-and-villain/images/5/5a/Arthur-weasley.jpg",
-                "background_image"=>"https://pm1.aminoapps.com/6464/a68bd85ba25eee9a6d9c365ac38d24a2044c77fe_hq.jpg"
+                "background_image"=>"https://i.pinimg.com/736x/e1/66/30/e166308ab2432608dea5c57eb96f856d.jpg"
             ],
 
             [
@@ -174,7 +174,7 @@ class WizardSeeder extends Seeder
                 "bio"=>"Dolores Jane Umbridge is a fictional character in the Harry Potter series, known for her manipulative, cruel, and power-hungry nature. She is a Ministry of Magic bureaucrat who becomes a Defense Against the Dark Arts professor at Hogwarts and later the High Inquisitor, wielding her authority to enforce strict, often sadistic, rules. She is characterized by her love for all things 'cute' and pink, her obsession with rules and order, and her deep-seated prejudice against those she deems 'inferior'(Pls perform cruciatus curse on her).",
                 "quote"=>"'You must not tell lies.' 'I will have order!'",
                 "image"=>"https://i.pinimg.com/736x/90/1e/3a/901e3a0e010357eeae9648515695e30a.jpg",
-                "background_image"=>"https://miro.medium.com/v2/resize:fit:1400/format:webp/1*4eCDXXbJbkiXAXeJAvu8yw.jpeg"
+                "background_image"=>"https://i.pinimg.com/736x/0b/32/cb/0b32cbf8cef5529d5a3217b42c4481b2.jpg"
             ],
 
             [
