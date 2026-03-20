@@ -19,7 +19,8 @@ The-Arcane-Universe is a dynamic Laravel-based web application featuring interac
 
 ## 🏗 Tech Stack
 
-- PHP (Laravel)
+- Laravel
+- PHP
 - Blade Templating Engine
 - SQLite
 - CSS3, JavaScript
