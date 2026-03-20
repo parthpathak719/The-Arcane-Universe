@@ -22,7 +22,7 @@ The-Arcane-Universe is a dynamic Laravel-based web application featuring interac
 - PHP (Laravel)
 - Blade Templating Engine
 - SQLite
-- HTML5, CSS3, JavaScript
+- CSS3, JavaScript
 - XAMPP (Local Development)
 - Cloudinary (Media Storage)
 - GeminiPro (AI-generated content)
